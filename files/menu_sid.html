@@ -1,0 +1,51 @@
+<?php
+session_start();
+$_SESSION['username'];
+
+if ( $_GET['logout'] == "success" ) {
+session_start();//Distruggo la vecchia sessione
+session_unset();
+session_destroy();
+session_start();//Apro una nuova sessione
+}
+?>
+<form method="post" action="?logout=success" id="cerca"><input type="image" src="files/img/key_out.jpg" onMouseOver="this.src='files/img/key_outh.jpg';" onMouseOut="this.src='files/img/key_out.jpg';" border='0'/></form>
+
+<hr />
+<p>Cerca annunci</p>
+		 	Categoria:
+		 	<br />
+            <form method="post" action="risultati.php" id="cerca">
+		 	<select name="categoria" >
+              <option value="Seleziona una categoria">Seleziona una categoria</option>
+                    <option value="Auto">Auto</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Case">Case</option>
+                    <option value="Altro">Altro</option>
+          </select>
+            <br><br>
+		  <label for="provincia">Provincia:
+	      </label>
+		  <br />
+		  <select name="provincia" >
+           	  <option value="Seleziona una voce">Seleziona una provincia</option>
+                <option value="Cagliari">Cagliari</option>
+    			<option value="Gallura">Gallura</option>
+   				<option value="Medio Campidano">Medio Campidano</option>
+  				<option value="Nuoro">Nuoro</option>
+  				<option value="Oristano">Oristano</option>
+ 				<option value="Ogliastra">Ogliastra</option>
+   				<option value="Sassari">Sassari</option>
+   				<option value="Sulcis">Sulcis</option>    
+          </select>
+			<br />
+	  
+		    <p>
+	        <input type='image' src='files/img/button_cer.jpg' onclick='' border='0'/>
+		  </p>
+          </form>
+		  <hr />
+             <p>Descrizione del progetto:
+  </p>
+</p>
+          <p>Questa applicazione permette l'inserimento e la risposta di annunci proprio come su subito.it i dati vengono inviati in un database su phpmyadmin e salvati dopo ogni modifica. </p>

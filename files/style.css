@@ -1,0 +1,31 @@
+body {
+	background-color: #ffffda;
+	margin-left: 200px;
+	margin-top: 50px;
+	margin-right: 200px;
+	margin-bottom: 50px;
+	font-family: Arial;
+	font-size: 16px;
+	/*text-transform: uppercase;*/
+	
+}
+div#container { width:auto; margin:1 auto; }
+div#header { background: url(img/logo.png) no-repeat; height:100px; padding: 10px 10px 10px 10px; }
+div#navigation { border-radius: 10px; padding: 10px 10px 10px 10px; margin-top: 10px; text-align:center; }
+div#main { /*background-color: #f7f7f7;*/ width: 650px; border-radius: 10px; padding: 10px 10px 10px 10px; margin-top: 10px; }
+div#sidebar{ background-color: #ffffff; float: right; width: 200px; border-radius: 10px; padding: 10px 10px 10px 10px;  margin-top: 10px; }
+div#footer{ clear: right; text-align:center; padding: 10px 10px 10px 10px; margin-top: 10px; } 
+.border-radius {
+  border-radius: 10px;
+  -moz-border-radius: 10px; /* firefox */
+  -webkit-border-radius: 10px; /* safari, chrome */
+}
+a:link, a:visited {
+    text-decoration: underline;
+    color: #e15d59;
+    background-color: transparent;
+}
+a:hover, a:active {
+    text-decoration: none;
+	color: #000000;
+}
